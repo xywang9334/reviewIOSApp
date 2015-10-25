@@ -4,10 +4,11 @@
         <attribute name="answer" optional="YES" attributeType="Binary" syncable="YES"/>
         <attribute name="company" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="difficulties" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="explanation" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="tag" optional="YES" attributeType="Transformable" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Problems" positionX="-63" positionY="-18" width="128" height="120"/>
+        <element name="Problems" positionX="-63" positionY="-18" width="128" height="135"/>
     </elements>
 </model>

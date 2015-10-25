@@ -17,6 +17,7 @@
 		90B38C361BDC0FE80006D956 /* leetCode_ReviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B38C351BDC0FE80006D956 /* leetCode_ReviewUITests.swift */; };
 		90B38C441BDC11C50006D956 /* CompanyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B38C431BDC11C50006D956 /* CompanyTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		90B38C4A1BDC19800006D956 /* Problems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B38C491BDC19800006D956 /* Problems.swift */; settings = {ASSET_TAGS = (); }; };
+		90B38C4C1BDD51D00006D956 /* addQuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B38C4B1BDD51D00006D956 /* addQuestionsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		90B38C371BDC0FE80006D956 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90B38C431BDC11C50006D956 /* CompanyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyTableViewController.swift; sourceTree = "<group>"; };
 		90B38C491BDC19800006D956 /* Problems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Problems.swift; path = ../Problems.swift; sourceTree = "<group>"; };
+		90B38C4B1BDD51D00006D956 /* addQuestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addQuestionsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				90B38C141BDC0FE70006D956 /* ViewController.swift */,
 				90B38C491BDC19800006D956 /* Problems.swift */,
 				90B38C161BDC0FE70006D956 /* Main.storyboard */,
+				90B38C4B1BDD51D00006D956 /* addQuestionsViewController.swift */,
 				90B38C431BDC11C50006D956 /* CompanyTableViewController.swift */,
 				90B38C1C1BDC0FE70006D956 /* Assets.xcassets */,
 				90B38C1E1BDC0FE70006D956 /* LaunchScreen.storyboard */,
@@ -267,6 +270,7 @@
 			files = (
 				90B38C1B1BDC0FE70006D956 /* leetCode_Review.xcdatamodeld in Sources */,
 				90B38C4A1BDC19800006D956 /* Problems.swift in Sources */,
+				90B38C4C1BDD51D00006D956 /* addQuestionsViewController.swift in Sources */,
 				90B38C151BDC0FE70006D956 /* ViewController.swift in Sources */,
 				90B38C441BDC11C50006D956 /* CompanyTableViewController.swift in Sources */,
 				90B38C131BDC0FE70006D956 /* AppDelegate.swift in Sources */,
@@ -496,6 +500,7 @@
 				90B38C3C1BDC0FE80006D956 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		90B38C3D1BDC0FE80006D956 /* Build configuration list for PBXNativeTarget "leetCode-ReviewTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +509,7 @@
 				90B38C3F1BDC0FE80006D956 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		90B38C401BDC0FE80006D956 /* Build configuration list for PBXNativeTarget "leetCode-ReviewUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +518,7 @@
 				90B38C421BDC0FE80006D956 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
