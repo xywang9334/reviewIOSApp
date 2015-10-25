@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import CoreData
 
 class CompanyTableViewController: UITableViewController {
+    var dataModel = [NSManagedObject]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,19 +35,20 @@ class CompanyTableViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        
+        return dataModel.count
     }
 
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCellWithIdentifier("companyCell", forIndexPath: indexPath)
+        let row = indexPath.row
+        let problem = dataModel[row]
+        cell.textLabel!.text = problem.valueForKey("company") as? String!
+        cell.detailTextLabel!.text = problem.valueForKey("difficulties") as? String!
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -82,7 +85,7 @@ class CompanyTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -90,6 +93,5 @@ class CompanyTableViewController: UITableViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
 
 }
