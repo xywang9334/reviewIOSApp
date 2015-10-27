@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		901964281BDFCAA400B3710E /* Problems.plist in Resources */ = {isa = PBXBuildFile; fileRef = 901964271BDFCAA400B3710E /* Problems.plist */; settings = {ASSET_TAGS = (); }; };
+		9019642B1BDFD53000B3710E /* shortestjobfirst.png in Resources */ = {isa = PBXBuildFile; fileRef = 9019642A1BDFD53000B3710E /* shortestjobfirst.png */; settings = {ASSET_TAGS = (); }; };
+		9019642D1BDFD72600B3710E /* problemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9019642C1BDFD72600B3710E /* problemList.swift */; settings = {ASSET_TAGS = (); }; };
 		90B38C131BDC0FE70006D956 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B38C121BDC0FE70006D956 /* AppDelegate.swift */; };
 		90B38C151BDC0FE70006D956 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B38C141BDC0FE70006D956 /* ViewController.swift */; };
 		90B38C181BDC0FE70006D956 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90B38C161BDC0FE70006D956 /* Main.storyboard */; };
@@ -38,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		901964271BDFCAA400B3710E /* Problems.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Problems.plist; sourceTree = "<group>"; };
+		9019642A1BDFD53000B3710E /* shortestjobfirst.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shortestjobfirst.png; sourceTree = "<group>"; };
+		9019642C1BDFD72600B3710E /* problemList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = problemList.swift; sourceTree = "<group>"; };
 		90B38C0F1BDC0FE70006D956 /* leetCode-Review.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "leetCode-Review.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90B38C121BDC0FE70006D956 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90B38C141BDC0FE70006D956 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +88,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		901964291BDFD4FD00B3710E /* Solutions */ = {
+			isa = PBXGroup;
+			children = (
+				9019642A1BDFD53000B3710E /* shortestjobfirst.png */,
+			);
+			name = Solutions;
+			sourceTree = "<group>";
+		};
 		90B38C061BDC0FE70006D956 = {
 			isa = PBXGroup;
 			children = (
@@ -105,15 +119,18 @@
 		90B38C111BDC0FE70006D956 /* leetCode-Review */ = {
 			isa = PBXGroup;
 			children = (
+				901964291BDFD4FD00B3710E /* Solutions */,
 				90B38C121BDC0FE70006D956 /* AppDelegate.swift */,
 				90B38C141BDC0FE70006D956 /* ViewController.swift */,
 				90B38C491BDC19800006D956 /* Problems.swift */,
+				9019642C1BDFD72600B3710E /* problemList.swift */,
 				90B38C161BDC0FE70006D956 /* Main.storyboard */,
 				90B38C4B1BDD51D00006D956 /* addQuestionsViewController.swift */,
 				90B38C431BDC11C50006D956 /* CompanyTableViewController.swift */,
 				90B38C1C1BDC0FE70006D956 /* Assets.xcassets */,
 				90B38C1E1BDC0FE70006D956 /* LaunchScreen.storyboard */,
 				90B38C211BDC0FE70006D956 /* Info.plist */,
+				901964271BDFCAA400B3710E /* Problems.plist */,
 				90B38C191BDC0FE70006D956 /* leetCode_Review.xcdatamodeld */,
 			);
 			path = "leetCode-Review";
@@ -241,6 +258,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				901964281BDFCAA400B3710E /* Problems.plist in Resources */,
+				9019642B1BDFD53000B3710E /* shortestjobfirst.png in Resources */,
 				90B38C201BDC0FE70006D956 /* LaunchScreen.storyboard in Resources */,
 				90B38C1D1BDC0FE70006D956 /* Assets.xcassets in Resources */,
 				90B38C181BDC0FE70006D956 /* Main.storyboard in Resources */,
@@ -272,6 +291,7 @@
 				90B38C4A1BDC19800006D956 /* Problems.swift in Sources */,
 				90B38C4C1BDD51D00006D956 /* addQuestionsViewController.swift in Sources */,
 				90B38C151BDC0FE70006D956 /* ViewController.swift in Sources */,
+				9019642D1BDFD72600B3710E /* problemList.swift in Sources */,
 				90B38C441BDC11C50006D956 /* CompanyTableViewController.swift in Sources */,
 				90B38C131BDC0FE70006D956 /* AppDelegate.swift in Sources */,
 			);

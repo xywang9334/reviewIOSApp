@@ -10,24 +10,43 @@ import Foundation
 import CoreData
 import UIKit
 
-class Problems: NSManagedObject {
-    @NSManaged var name: String
-    @NSManaged var tag: [String]
-    @NSManaged var company: String
-    @NSManaged var solution: [UIImage]
+class Problems{
+    private var _difficulties: String
+    private var _name: String
+    private var _company = [String]()
+    private var _tag = [String]()
+    private var solution: UIImage
+    private var explanation: String
     
-    override func awakeFromInsert() {
-        super.awakeFromInsert()
-        setPrimitiveValue(name, forKey: "name")
-        setPrimitiveValue(company, forKey: "company")
-        setPrimitiveValue(tag, forKey: "tag")
-        setPrimitiveValue(solution, forKey: "answer")
+    init (name: String, difficulties: String, explanation: String) {
+        self._name = name
+        self.solution = UIImage(named: name)!
+        self._difficulties = difficulties
+        self.explanation = explanation
     }
     
-    init() {
-        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        let managedContext = appDelegate.managedObjectContext
-        let entity =  NSEntityDescription.entityForName("Problems", inManagedObjectContext: managedContext)
-        super.init(entity: entity!, insertIntoManagedObjectContext: managedContext)
+    func getName() -> String {
+        return _name
     }
+    
+    func addCompany(companyList: [String]) {
+        _company = companyList
+    }
+    
+    func addCompany(company: String) {
+        _company.append(company)
+    }
+    
+    func getCompany() -> [String] {
+        return _company
+    }
+    
+    func getSolution() -> UIImage {
+        return solution
+    }
+    
+    func getExplanation() -> String {
+        return explanation
+    }
+    
 }
