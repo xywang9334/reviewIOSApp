@@ -18,9 +18,9 @@ class Problems{
     private var solution: UIImage
     private var explanation: String
     
-    init (name: String, difficulties: String, explanation: String) {
+    init (name: String, difficulties: String, explanation: String, solution: String) {
         self._name = name
-        self.solution = UIImage(named: name)!
+        self.solution = UIImage(named: solution)!
         self._difficulties = difficulties
         self.explanation = explanation
     }
@@ -47,6 +47,10 @@ class Problems{
     
     func getExplanation() -> String {
         return explanation
+    }
+    
+    func getDifficulties() -> String {
+        return _difficulties
     }
     
 }
