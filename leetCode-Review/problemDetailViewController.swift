@@ -8,7 +8,7 @@
 
 import UIKit
 
-class problemDetailViewController: UIViewController {
+class problemDetailViewController: UIViewController, UIScrollViewDelegate {
     var name: String?
     var difficulties: String?
     var explanation: String?
@@ -30,6 +30,7 @@ class problemDetailViewController: UIViewController {
         nameTag.text = name
         difficultTag.text = difficulties
         explan.text = explanation
+        imageSolution.image = solution
         self.title = name
     }
 
