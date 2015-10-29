@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		901964281BDFCAA400B3710E /* Problems.plist in Resources */ = {isa = PBXBuildFile; fileRef = 901964271BDFCAA400B3710E /* Problems.plist */; settings = {ASSET_TAGS = (); }; };
-		9019642B1BDFD53000B3710E /* shortestjobfirst.png in Resources */ = {isa = PBXBuildFile; fileRef = 9019642A1BDFD53000B3710E /* shortestjobfirst.png */; settings = {ASSET_TAGS = (); }; };
-		9019642D1BDFD72600B3710E /* problemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9019642C1BDFD72600B3710E /* problemList.swift */; settings = {ASSET_TAGS = (); }; };
-		9019642F1BE174BC00B3710E /* AllProblemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9019642E1BE174BC00B3710E /* AllProblemsTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		901964311BE178FA00B3710E /* problemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901964301BE178FA00B3710E /* problemDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		901964281BDFCAA400B3710E /* Problems.plist in Resources */ = {isa = PBXBuildFile; fileRef = 901964271BDFCAA400B3710E /* Problems.plist */; };
+		9019642B1BDFD53000B3710E /* shortestjobfirst.png in Resources */ = {isa = PBXBuildFile; fileRef = 9019642A1BDFD53000B3710E /* shortestjobfirst.png */; };
+		9019642D1BDFD72600B3710E /* problemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9019642C1BDFD72600B3710E /* problemList.swift */; };
+		9019642F1BE174BC00B3710E /* AllProblemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9019642E1BE174BC00B3710E /* AllProblemsTableViewController.swift */; };
+		901964311BE178FA00B3710E /* problemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901964301BE178FA00B3710E /* problemDetailViewController.swift */; };
 		90B38C131BDC0FE70006D956 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B38C121BDC0FE70006D956 /* AppDelegate.swift */; };
 		90B38C151BDC0FE70006D956 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B38C141BDC0FE70006D956 /* ViewController.swift */; };
 		90B38C181BDC0FE70006D956 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90B38C161BDC0FE70006D956 /* Main.storyboard */; };
@@ -20,9 +20,9 @@
 		90B38C201BDC0FE70006D956 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90B38C1E1BDC0FE70006D956 /* LaunchScreen.storyboard */; };
 		90B38C2B1BDC0FE80006D956 /* leetCode_ReviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B38C2A1BDC0FE80006D956 /* leetCode_ReviewTests.swift */; };
 		90B38C361BDC0FE80006D956 /* leetCode_ReviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B38C351BDC0FE80006D956 /* leetCode_ReviewUITests.swift */; };
-		90B38C441BDC11C50006D956 /* CompanyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B38C431BDC11C50006D956 /* CompanyTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		90B38C4A1BDC19800006D956 /* Problems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B38C491BDC19800006D956 /* Problems.swift */; settings = {ASSET_TAGS = (); }; };
-		90B38C4C1BDD51D00006D956 /* addQuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B38C4B1BDD51D00006D956 /* addQuestionsViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		90B38C441BDC11C50006D956 /* CompanyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B38C431BDC11C50006D956 /* CompanyTableViewController.swift */; };
+		90B38C4A1BDC19800006D956 /* Problems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B38C491BDC19800006D956 /* Problems.swift */; };
+		90B38C4C1BDD51D00006D956 /* addQuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B38C4B1BDD51D00006D956 /* addQuestionsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -443,7 +443,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "leetCode-Review/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Wang-Xinyi.leetCode-Review";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -456,7 +456,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "leetCode-Review/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Wang-Xinyi.leetCode-Review";
 				PRODUCT_NAME = "$(TARGET_NAME)";
