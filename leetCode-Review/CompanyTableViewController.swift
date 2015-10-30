@@ -10,16 +10,22 @@ import UIKit
 import CoreData
 
 class CompanyTableViewController: UITableViewController {
-    var dataModel = [NSManagedObject]()
-
+    
+    var problem = [Problems]()
+    var companyList = [String]()
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        for p in problem {
+            let list = p.getCompany()
+            for l in list {
+                if companyList.count == 0 {
+                    companyList.append(l)
+                }
+                else if companyList.contains(l) {
+                    companyList.append(l)
+                }
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,17 +41,13 @@ class CompanyTableViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        return dataModel.count
+        return companyList.count
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("companyCell", forIndexPath: indexPath)
-        let row = indexPath.row
-        let problem = dataModel[row]
-        cell.textLabel!.text = problem.valueForKey("company") as? String!
-        cell.detailTextLabel!.text = problem.valueForKey("difficulties") as? String!
+        cell.textLabel!.text = companyList[indexPath.row]
         return cell
     }
     

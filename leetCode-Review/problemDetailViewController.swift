@@ -14,38 +14,34 @@ class problemDetailViewController: UIViewController, UIScrollViewDelegate {
     var explanation: String?
     var companies: [String] = [""]
     var solution: UIImage?
+    var descript: String?
     
-    @IBOutlet var desc: UILabel!
     
-    
-    @IBOutlet var scrollView: UIScrollView!
-    @IBOutlet var difficultTag: UILabel!
-    @IBOutlet var companyTag: UILabel!
-    
-    @IBOutlet var imageSolution: UIImageView!
-    
+    @IBOutlet var difficulty: UILabel!
+    @IBOutlet var des: UILabel!
+    @IBOutlet var imageView: UIImageView!
+
+
+    @IBOutlet var tapText: UILabel!
     @IBOutlet var explan: UILabel!
-    
+    @IBOutlet var company: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        scrollView.minimumZoomScale = 1.0
-        scrollView.maximumZoomScale = 4.0
-        scrollView.zoomScale = 1.0
-        scrollView = UIScrollView(frame: view.bounds)
-        difficultTag.text = difficulties
-        explan.text = explanation
-        imageSolution.image = solution
         self.title = name
-        let stringRepresentation = companies.joinWithSeparator(" ")
-        companyTag.text = stringRepresentation
-        scrollView.addSubview(desc)
-        scrollView.addSubview(difficultTag)
-        scrollView.addSubview(companyTag)
-        scrollView.addSubview(explan)
-//        scrollView.addSubview(imageSolution)
-        self.view.addSubview(scrollView)
-        setZoomScale()
-        setupGestureRecognizer()
+        difficulty.text = "difficulty: " + difficulties!
+        des.text = "description: " + descript!
+        company.text = companies.joinWithSeparator(", ")
+        explan.text = explanation
+        let tapGestureRecognizer = UITapGestureRecognizer(target:self, action:Selector("imageTapped:"))
+        imageView.userInteractionEnabled = true
+        imageView.addGestureRecognizer(tapGestureRecognizer)
+        
+    }
+    
+    func imageTapped(img: AnyObject)
+    {
+        imageView.image = solution
+        tapText.hidden = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -56,31 +52,31 @@ class problemDetailViewController: UIViewController, UIScrollViewDelegate {
         return view
     }
     
-    func setZoomScale() {
-        let imageViewSize = view.bounds.size
-        let scrollViewSize = scrollView.bounds.size
-        let widthScale = scrollViewSize.width / imageViewSize.width
-        let heightScale = scrollViewSize.height / imageViewSize.height
-        
-        scrollView.minimumZoomScale = min(widthScale, heightScale)
-        scrollView.zoomScale = 1.0
-    }
+//    func setZoomScale() {
+//        let imageViewSize = view.bounds.size
+//        let scrollViewSize = scrollView.bounds.size
+//        let widthScale = scrollViewSize.width / imageViewSize.width
+//        let heightScale = scrollViewSize.height / imageViewSize.height
+//        
+//        scrollView.minimumZoomScale = min(widthScale, heightScale)
+//        scrollView.zoomScale = 1.0
+//    }
     
     
-    func setupGestureRecognizer() {
-        let doubleTap = UITapGestureRecognizer(target: self, action: "handleDoubleTap:")
-        doubleTap.numberOfTapsRequired = 2
-        scrollView.addGestureRecognizer(doubleTap)
-    }
+//    func setupGestureRecognizer() {
+//        let doubleTap = UITapGestureRecognizer(target: self, action: "handleDoubleTap:")
+//        doubleTap.numberOfTapsRequired = 2
+//        scrollView.addGestureRecognizer(doubleTap)
+//    }
     
-    func handleDoubleTap(recognizer: UITapGestureRecognizer) {
-        
-        if (scrollView.zoomScale > scrollView.minimumZoomScale) {
-            scrollView.setZoomScale(scrollView.minimumZoomScale, animated: true)
-        } else {
-            scrollView.setZoomScale(scrollView.maximumZoomScale, animated: true)
-        }
-    }
+//    func handleDoubleTap(recognizer: UITapGestureRecognizer) {
+//        
+//        if (scrollView.zoomScale > scrollView.minimumZoomScale) {
+//            scrollView.setZoomScale(scrollView.minimumZoomScale, animated: true)
+//        } else {
+//            scrollView.setZoomScale(scrollView.maximumZoomScale, animated: true)
+//        }
+//    }
     
 
     /*

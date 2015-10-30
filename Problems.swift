@@ -17,12 +17,14 @@ class Problems{
     private var _tag = [String]()
     private var solution: UIImage
     private var explanation: String
+    private var description: String
     
-    init (name: String, difficulties: String, explanation: String, solution: String) {
+    init (name: String, difficulties: String, explanation: String, solution: String, description: String) {
         self._name = name
         self.solution = UIImage(named: solution)!
         self._difficulties = difficulties
         self.explanation = explanation
+        self.description = description
     }
     
     func getName() -> String {
@@ -52,5 +54,7 @@ class Problems{
     func getDifficulties() -> String {
         return _difficulties
     }
-    
+    func getDescription() -> String {
+        return description
+    }
 }

@@ -10,6 +10,7 @@
 			<string>shortestjobfirst.png</string>
 			<string>Amazon</string>
 			<string>Easy</string>
+			<string>Given a list of jobs&apos;  arrival time and execution time. Run shortest job first to all current jobs</string>
 		</array>
 	</array>
 </dict>

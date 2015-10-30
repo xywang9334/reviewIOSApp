@@ -9,7 +9,7 @@
 import UIKit
 
 class AllProblemsTableViewController: UITableViewController {
-    var pl = problemList().getList()
+    var pl = [Problems]()
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -88,6 +88,7 @@ class AllProblemsTableViewController: UITableViewController {
             detail.explanation = pl[indexPath!.row].getExplanation()
             detail.companies = pl[indexPath!.row].getCompany()
             detail.solution = pl[indexPath!.row].getSolution()
+            detail.descript = pl[indexPath!.row].getDescription()
         }
     }
 
